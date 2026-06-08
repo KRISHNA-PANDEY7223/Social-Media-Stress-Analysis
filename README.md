@@ -82,6 +82,36 @@ The analysis is performed using Python data visualization libraries to uncover p
 
 ---
 
+
+### 5. Country wise most used platform (Heatmap)
+
+- Used heatmap to analyze country wise most used platform
+  
+📌 Insight:
+- India was using platforms like linkedin , instagram and snapchat at a medium rate as compared to other countries 
+- Heatmap provides clearer insights than simple plots
+
+---
+
+### 6. Age and academic level wise stress level (Heatmap)
+
+- Used heatmap to analyze stress level among the age and academic level
+  
+📌 Insight:
+- High school students aged 18 were the most stressed among any others 
+- 19 years old Undergraduates were the second most high stressed students after the High School students 
+
+---
+
+### 7. Academic level wise Count of Daily Unlocks (Lineplot)
+
+- Used Lineplot to analyze daily unlcoks of students according to their academic level
+  
+📌 Insight:
+- High school students were having the most daily unlocks among any others 
+- Graduates were having the least daily unlocks  
+
+---
 ## 📈 Important Visualizations Used
 
 - 📊 Stacked Bar Charts → Categorical comparisons  
@@ -113,6 +143,8 @@ Regression Plot (Sleep vs Mental Health)
 sns.regplot(data=df, x="Mental_Health_Score", y="Sleep_Hours_Per_Night")
 Heatmap (Age vs Stress vs Sleep)
 sns.heatmap(crosstab_data, annot=True, cmap="viridis")
+sns.lineplot(data=st_du_mup,y=df["Daily_Unlocks"],x=df["Academic_Level"])
+
 📊 Final Conclusion
 
 The analysis shows that:
