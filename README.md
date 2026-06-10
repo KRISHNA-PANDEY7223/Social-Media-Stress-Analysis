@@ -138,9 +138,12 @@ Use:
 
 📌 Example Code Snippets
 Stacked Bar Chart (Stress by Platform)
-pd.crosstab(df['Most_Used_Platform'], df['Stress_Level'], normalize='index').plot(kind='bar', stacked=True)
+pd.crosstab(df['Most_Used_Platform'],
+df['Stress_Level'], normalize='index').plot(kind='bar', stacked=True)
+
 Regression Plot (Sleep vs Mental Health)
 sns.regplot(data=df, x="Mental_Health_Score", y="Sleep_Hours_Per_Night")
+
 Heatmap (Age vs Stress vs Sleep)
 sns.heatmap(crosstab_data, annot=True, cmap="viridis")
 sns.lineplot(data=st_du_mup,y=df["Daily_Unlocks"],x=df["Academic_Level"])
